@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/about.css">
+</head>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).on("scroll", function() {
+    var pageTop = $(document).scrollTop();
+    var pageBottom = pageTop + $(window).height();
+    var fadeElements = $(".fade-in");
+
+    fadeElements.each(function() {
+        var element = $(this);
+        if (element.position().top < pageBottom - 50) {
+            element.addClass("visible");
+        }
+    });
+});
+</script>
+
+<body>
+        <header>
+            <nav class="top-nav">
+                <a href="#" class="logo">
+                    <img src="img/logo.png" alt="SISU Club Logo" class="logo-img">
+                    SISU Club
+                </a>
+                <div class="main-nav">
+                    <a href="/Capython/index.html">Home</a>
+                    <!-- <a href="fitness_Tracker/fitness_Tracker.html">Fitness Tracking</a> -->
+                    <a href="#footer">Contact Us</a>
+                </div>
+            </nav>
+        </header>
+
+    <section id="heade">
+        <h2>ABOUT US</h2>
+    </section>
+    
+    <section id="who">
+        <section class="texte">
+            <h3>WHO WE ARE</h3>
+            <p>Sisu is more than just a fitness app. It’s a community.<br><br>
+
+            We created Sisu to bring together active people, no matter
+            their level or journey. Sisu is a space where you can share 
+            your victories, recipes, and moments of motivation. It’s a 
+            place where every effort is celebrated, and mutual support is 
+            at the heart of everything. Because well-being isn’t built 
+            alone it thrives within a caring community that encourages 
+            you every step of the way.</p>
+        </section>
+        <section id="photo1">
+            <img src="img/sisu_noir.png" alt="capybara">
+        </section>
+    </section>
+
+    <section id="mission" class="fade-in">
+        <section id="photo2">
+            <img src="img/smile.jpg" alt="woman smiling">
+        </section>
+        <section class="texte">
+            <h3>OUR MISSIONS</h3>
+             <p>At Sisu, we believe that strength isn’t just about individual
+             performance it’s about the support we give one another. Our
+              mission is to create a space where everyone can progress 
+              at their own pace, surrounded by a positive and motivating 
+              community. With practical tools and an intuitive platform, 
+              we help each user push their limits while staying 
+              connected to others.</p>
+        </section>
+    </section>
+
+    <section id="values" class="fade-in">
+        <h3>OUR VALUES</h3>
+
+        <section id="valtexte">
+            <section class="value">
+                <p class="val">COMMUNITY</p>
+                <p>Every journey is unique, but we move forward better 
+                    together. Sisu is a space for sharing, encouragement, 
+                    and motivation, where everyone can find support and 
+                    exchange experiences.
+                </p>
+            </section>
+    
+            <section class="value">
+                <p class="val">ACCESSIBILITY</p>
+                <p>No matter your level, discipline, or goals, Sisu is 
+                    made for you. There’s no pressure here just a 
+                    supportive environment that helps you progress at 
+                    your own rhythm.
+                </p>
+            </section>
+    
+            <section class="value">
+                <p class="val">WELL-BEING</p>
+                <p>Beyond performance, we promote a healthy and balanced 
+                    approach to fitness. Whether through workouts, advice, 
+                    or recipes, we aim to help everyone find their own 
+                    balance.
+                </p>
+            </section>
+        </section>
+        
+    </section>
+
+    <section id="why" class="fade-in">
+        <h3>WHY SISU</h3>
+        <p>The word "Sisu" comes from Finnish and represents
+            perseverance, resilience, and determination in the 
+            face of challenges. This is exactly what we want to 
+            convey through our app: a source of motivation and 
+            inspiration, where every effort matters and every 
+            victory is celebrated.
+        </p>
+        <br>
+        <p>Sisu is more than an app. It’s a community that 
+            pushes you to be your best every day.
+        </p>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-section">
+            <h4>Resources</h4>
+            <ul>
+                <li><a href="About_us/aboutUs.html">About Us</a></li>
+                <li><a href="fitness_Tracker/fitness_Tracker.html">Fitness Tracking</a></li>
+                <li><a href="Contact/contacts.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Support</h4>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Contact Support</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Legal</h4>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Cookies Settings</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <div class="footer-bottom">
+        © 2025 SISU Club. All Rights Reserved.
+    </div>
+    
+</body>
+</html>

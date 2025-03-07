@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #201E1F;
+}
+
+
+.category img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #685BC7;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.main-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.main-nav a:hover {
+    color: #F9F575;
+}
+
+
+.journey {
+    background-color: #ffffff;
+    color: #201E1F;
+    text-align: center;
+    padding: 150px 20px;
+}
+
+.journey h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.journey p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.start-button {
+    display: inline-block;
+    background-color: #FE7B2A;
+    color: #ffffff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.start-button:hover {
+    background-color: #F9F575;
+    color: #201E1F;
+}
+
+
+.journey2, .journey3, .journey4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 50px;
+}
+
+.journey-content {
+    flex: 1;
+    max-width: 50%;
+    padding: 0 20px;
+}
+
+.journey-image {
+    flex: 1;
+    max-width: 40%;
+    text-align: center;
+}
+
+.journey-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.journey2 {
+    background-color: #685BC7;
+    color: #ffffff;
+}
+
+.journey3 {
+    background-color: #685BC7;
+    color: #ffffff;
+}
+
+.journey4 {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Product Categories */
+.product-categories {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+    background-color: #F9F575;
+}
+
+.category {
+    text-align: center;
+    max-width: 250px;
+}
+
+.category img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.category h3 {
+    margin-top: 15px;
+    color: #201E1F;
+}
+
+.category p {
+    color: #201E1F;
+}
+
+/* Footer */
+footer {
+    background-color: #685BC7;
+    color: #ffffff;
+    padding: 40px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-section h4 {
+    margin-bottom: 15px;
+    color: #F9F575;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: #FE7B2A;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    background-color: #201E1F;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .top-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-nav {
+        margin-top: 15px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .journey2, .journey3, .journey4 {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .journey-content, .journey-image {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .journey-image {
+        margin-top: 20px;
+    }
+
+    .product-categories {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+       /* animation */
+       .hidden {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+   
+    .visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+
+
+/* Blender Watch Section */
+/* Layout: Side-by-side alignment */
+.watch-animation {
+    display: flex;
+    align-items: center; /* Centers items vertically */
+    justify-content: space-between; /* Ensures spacing */
+    gap: 20px; /* Adds spacing between elements */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* Text Section (Left) */
+.watch-animation aside {
+    flex: 1;
+    max-width: 500px;
+    padding: 20px;
+    padding-left: 90px;
+}
+
+/* Blender Canvas (Right) */
+#three-canvas {
+    flex: 1;
+    width: 100%;
+    height: auto;
+    min-width: 40%; 
+    max-width: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .watch-animation {
+        flex-direction: column; /* Stacks text and canvas */
+        align-items: center; /* Centers them */
+        text-align: center;
+    }
+
+    #three-canvas {
+        width: 80%; /* Makes it more flexible on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    #three-canvas {
+        width: 90%;
+        min-width: 200px; /* Ensures it fits on very small screens */
+    }
+
+    .watch-animation aside h2 {
+        font-size: 1.5rem;
+    }
+
+    .watch-animation aside p {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+    
+    /* Responsive */
+@media (max-width: 768px) {
+    .top-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-nav {
+        margin-top: 15px;
+        flex-direction:row;
+        gap: 10px;
+    }
+
+    .journey2, .journey3, .journey4 {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .journey-content, .journey-image {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .journey-image {
+        margin-top: 20px;
+    }
+
+    .product-categories {
+        flex-direction: column;
+        align-items: center;
+    }
+}
